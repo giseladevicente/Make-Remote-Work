@@ -23,14 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     featuresBtn.addEventListener('click', () => {
         featuresUl.classList.toggle('hidden');
-        featuresBtnArrow.style.transform = 'transform 0.3s ease'
+
+        featuresBtnArrow.style.transition = 'transform 0.3s ease'
         featuresBtnArrow.style.transform = (featuresBtnArrow.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
         
     });
 
     companyBtn.addEventListener('click', () => {
         companyUl.classList.toggle('hidden'); 
-        companyBtnArrow.style.transform = 'transform 0.3s ease'
+        companyBtnArrow.style.transition = 'transform 0.3s ease'
         companyBtnArrow.style.transform = (companyBtnArrow.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
         
     });
